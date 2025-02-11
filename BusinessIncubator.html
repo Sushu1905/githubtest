@@ -1,0 +1,473 @@
+<html> 
+<head>
+	<title> Business Incubator | Investors</title>
+
+
+		<!-- Web Fonts -->
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+		<!-- CSS Global Compulsory -->
+		<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- CSS Header and Footer -->
+		<link rel="stylesheet" href="assets/css/header.css">
+		<link rel="stylesheet" href="assets/css/footer.css">
+
+		<!-- CSS Implementing Plugins -->
+		<link rel="stylesheet" href="assets/plugins/line-icons-pro/styles.css">
+		<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+		<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+		<link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+
+		<!-- CSS Customization -->
+		<link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+	<!--=== Header v1 ===-->
+	<div class="header-v1">
+	<!-- Topbar -->
+	<div class="topbar-v1">
+	<div class="container">
+	<div class="row">
+	<div class="col-md-6">
+		<ul class="list-inline top-v1-contacts">
+		<li>
+		<i class="fa fa-envelope"></i> Email: BusinessIncubator@gmail.com
+		</li>
+		<li>
+		<i class="fa fa-phone"></i> Contact no : 88666 00555
+		</li>
+		</ul>
+	</div>+
+	</div>
+	</div>
+	</div>
+
+<!-- End Topbar -->
+
+				<!-- Navbar -->
+				<div class="navbar mega-menu" role="navigation">
+				<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="res-container">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+				<div class="navbar-brand">
+				<a href="BusinessIncubator.html">
+				<img src="assets/img/logo/Logo.jpg" alt="Logo">
+				</a>
+				</div>
+				</div><!--/end responsive container-->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-responsive-collapse">
+				<div class="res-container">
+				<ul class="nav navbar-nav">
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+
+
+<!-- Home  -->
+<li class="mega-menu-fullwidth">
+	<a href="BusinessIncubator.html" >
+	HOME
+	</a>
+
+	</li>
+	<!-- End Home-->
+
+	<!-- About Us -->
+	<li class="mega-menu-fullwidth">
+	<a href="about.html" >
+	ABOUT US
+	</a>	
+	</li>
+	<!-- End About us -->
+
+	
+	<li class="mega-menu-fullwidth">
+	<a href="Investor.html" >
+	INVESTORS
+	</a>
+
+	</li>
+
+	<li class="mega-menu-fullwidth">
+<a href="Mentor.html" >
+MENTOR
+</a>
+
+</li>
+
+
+	<!-- Gallery -->
+	<li class="mega-menu-fullwidth">
+	<a href="Contact.html" >
+	CONTACT US
+	</a>
+
+	</li>
+	<!-- End Gallery -->
+
+
+	
+
+	<!-- Contact Us -->
+	<li class="mega-menu-fullwidth">
+	<a href="Login.html" >
+	LOGIN
+	</a>	
+	</li>
+	<!-- End Contact us -->
+
+	<!-- Registration -->
+	<li class="mega-menu-fullwidth">
+	<a href="registration.html" >
+	REGISTRATION
+	</a>	
+	</li>
+	<!-- End registration -->
+<li class="mega-menu-fullwidth">
+<a href="BookAppointment.html" >
+BOOK APPOINTMENT
+</a>	
+</li>
+				
+
+            </ul>
+
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				<!-- End Navbar -->
+				<!-- Slider -->
+			<div id="slide">
+				<div class="slideshow-container">
+				<div class="mySlides fade"> <img src="assets/img/slider/1.jpg" alt="Slider1" style="width:100%"> </div>
+				<div class="mySlides fade"> <img src="assets/img/slider/2.jpg" alt="Slider2" style="width:100%"> </div>
+				<div class="mySlides fade"> <img src="assets/img/slider/3.jpg" alt="Slider3" style="width:100%"> </div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+				</div>
+				<br>
+				<div style="text-align:center"> 
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+				</div>
+	
+				<script>
+				var slideIndex = 0;
+				showSlides();
+				var slides,dots;
+	
+				function showSlides() {
+				var i;
+				slides = document.getElementsByClassName("mySlides");
+				dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex> slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 8000); // Change image every 8 seconds
+				}
+	
+				function plusSlides(position) {
+				slideIndex +=position;
+				if (slideIndex> slides.length) {slideIndex = 1}
+				else if(slideIndex<1){slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				}
+	
+				function currentSlide(index) {
+				if (index> slides.length) {index = 1}
+				else if(index<1){index = slides.length}
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[index-1].style.display = "block";  
+				dots[index-1].className += " active";
+				}
+				</script>
+	
+	
+				<!-- End of Slider -->
+	
+			<!--=== Welcome to Unity===-->
+			<div class="container content-md welcomeSection">
+			<div class="row section1">
+			<div class="col-md-6" style="margin-bottom: 40px;" style="border:2px solid rgb(59, 23, 23) background">
+				<h2 class="title-v2">WELCOME TO <span style="color: #72c02c;"> BI( Business Incubator)</span></h2>
+				<p style="text-align: justify; font-size: 14px;">Empowering startups to scale faster, creating a strong network of stakeholders and accelerating innovation for top corporates from around the world.</p>
+				<p style="text-align: justify; font-size: 14px;">We support some of the most innovative and disruptive startups in the world. Collaborate with us to build a future-ready innovation ecosystem.
+				</p><a href="about.html" class="btn-u btn-brd btn-brd-hover">Read More</a>
+			</div>
+			<div class="col-md-6 overflow-h">
+				<img style="border-radius: 50px; margin-left: 30px;" src="assets/img/bg/1.jpg" alt="">
+			</div>
+			</div>
+			</div>
+			<!--=== End About Us ===-->
+	
+	
+	
+			<!-- Specialities -->
+			<div class="container" style="margin-top: 50px;">
+			<div class="headline-center" style="margin-bottom: 60px;">
+				<h2>Our Specialities</h2>
+				<div class="line"></div>
+				<p></p>
+			</div><!--end Spciallities-->
+	
+			<div class="row" style="margin-bottom: 40px;">
+				<div class="col-md-4">
+					<div class="content-boxes-v5" style="margin-bottom: 30px;">
+						<i class="icon-medical-005" style="border-radius: 50%;"></i>
+						<div class="overflow-h">
+							<h3 class="no-top-space">Technology and Innovation</h3>
+							<p>Specializing in supporting technology-driven startups and businesses, providing them with the resources and environment needed to develop and launch innovative products or services.</p>
+						</div>
+					</div>
+					<div class="content-boxes-v5" style="margin-bottom: 30px;">
+						<i style="border-radius: 50%;" class="icon-medical-054"></i>
+						<div class="overflow-h">
+							<h3 class="no-top-space">Social Entrepreneurship </h3>
+							<p>Focusing on startups that have a social or environmental mission. This type of incubator may support businesses that aim to create positive social impact alongside financial sustainability</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="content-boxes-v5" style="margin-bottom: 30px;">
+						<i style="border-radius: 50%;" class="icon-medical-042"></i>
+						<div class="overflow-h">
+							<h3 class="no-top-space">Biotechnology and Life Sciences</h3>
+							<p>Concentrating on startups in the biotechnology and life sciences sectors, offering specialized resources, laboratories, and expertise to help businesses in these fields grow</p>
+						</div>
+					</div>
+					<div class="content-boxes-v5" style="margin-bottom: 30px;">
+						<i style="border-radius: 50%;" class="icon-medical-019"></i>
+						<div class="overflow-h">
+							<h3 class="no-top-space">Cleantech and Sustainability</h3>
+							<p>Supporting startups that focus on clean and sustainable technologies, renewable energy, and environmentally friendly solutions</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="content-boxes-v5" style="margin-bottom: 30px;">
+						<i style="border-radius: 50%;" class="icon-medical-069"></i>
+						<div class="overflow-h">
+							<h3 class="no-top-space">Fintech and Finance</h3>
+							<p>Concentrating on startups in the financial technology sector, assisting with innovations in banking, payments, blockchain, and other financial services</p>
+						</div>
+					</div>
+					<div class="content-boxes-v5" style="margin-bottom: 30px;">
+						<i style="border-radius: 50%;" class="icon-medical-061"></i>
+						<div class="overflow-h">
+							<h3 class="no-top-space">Creative Industries</h3>
+							<p>Supporting startups in creative fields such as design, media, arts, and entertainment. This type of incubator may focus on helping creative entrepreneurs turn their ideas into viable businesses</p>
+						</div>
+					</div>
+				</div>
+			</div><!--/end row-->
+			</div><!--/end container-->
+			<!-- End Content Part -->
+		
+			<!-- Blog part -->
+			<div class="container">
+			<div class="headline-center" style="margin-bottom: 40px;">
+				<h2>Recent Blogs</h2>
+				<div class="line"></div>
+			</div><!--/end Headline Center-->
+	
+			<div class="container" style="margin-bottom: 50px;">
+			<div class="row news-v1">
+			<div class="col-md-4" style="margin-bottom: 40px;">
+				<div class="news-v1-in">
+					<img class="img-responsive" src="assets/img/blogs/1.jpg" alt="">
+					<h3><a href="blog.html">Green Energy Pioneers: How Indian Cleantech Startups are Shaping Renewable Technologies</a></h3>
+					<p>Starting and operating a startup can be an exhilarating but mentally taxing journey. From the initia ...</p>
+					<ul class="list-inline news-v1-info">
+						<li><span>By</span> <a href="#">RGV Kulkarni</a></li>
+						<li style="margin-left: 17px;">|</li>
+						<li style="margin-left: 12px;"><i class="fa fa-clock-o"></i> December 31, 2020</li>
+						<li><a href="blog.html" class="btn-u btn-brd btn-brd-hover blogButton">Read More</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4" style="margin-bottom: 40px;">
+				<div class="news-v1-in">
+					<img class="img-responsive" src="assets/img/blogs/2.jpg" alt="">
+					<h3><a href="blog.html">How Indian Aerospace Startups Can Now Contribute to Global Successes like Chandrayaan-3</a></h3>
+					<p>The Indian Space Economy is set to capture 9% of the global space economy by 2030. Read more to know ...</p>
+					<ul class="list-inline news-v1-info">
+						<li><span>By</span> <a href="#">ISRO</a></li>
+						<li style="margin-left: 17px;">|</li>
+						<li style="margin-left: 12px;"><i class="fa fa-clock-o"></i> December 31, 2020</li>
+						<li><a href="blog.html" class="btn-u btn-brd btn-brd-hover blogButton">Read More</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="news-v1-in">
+					<img class="img-responsive" src="assets/img/blogs/3.jpg" alt="">
+					<h3><a href="blog.html">Unlocking the Realm for Quantum Computing</a></h3>
+					<p>In the ever-evolving landscape of technology, quantum computing has the potential to revolutionize t ...</p>
+					<ul class="list-inline news-v1-info">
+						<li><span>By</span> <a href="#">Abhinav Kari</a></li>
+						<li style="margin-left: 17px;">|</li>
+						<li style="margin-left: 12px;"><i class="fa fa-clock-o"></i> December 31, 2020</li>
+						<li><a href="blog.html" class="btn-u btn-brd btn-brd-hover blogButton">Read More</a></li>
+					</ul>
+				</div>
+			</div>
+			</div>
+			</div>
+			<!-- End News v1 Gray -->
+			</div>
+	
+	
+	
+			<!--=== Footer ===-->
+			<div class="footer-v1">
+			<div class="footer">
+			<div class="container">
+			<div class="row">
+			<!-- About -->
+			<div class="col-md-3 md-margin-bottom-40">
+			<a href="BusinessIncubator.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo/Logo.jpg" alt=""></a>
+			<p>This website is made for guidance & Support for the startups</p>
+			<p>Our mission is to deliver high quality, affordable services to the entrepreneur in US.</p>
+			</div><!--/col-md-3-->
+			<!-- End About -->
+	
+			<!-- Latest -->
+			<div class="col-md-3" style="margin-bottom: 40px;">
+			<div class="posts">
+			<div class="headline"><h2>Latest Posts</h2></div>
+			<ul class="list-unstyled latest-list">
+			<li>
+			<a href="blog.html">Incredible content</a>
+			<small>December 16, 2020</small>
+			</li>
+			<li>
+			<a href="gallery.html">Latest Images</a>
+			<small>December 16, 2020</small>
+			</li>
+			<li>
+			<a href="terms.html">Terms and Conditions</a>
+			<small>December 16, 2020</small>
+			</li>
+			</ul>
+			</div>
+			</div><!--/col-md-3-->
+			<!-- End Latest -->
+	
+			<!-- Link List -->
+			<div class="col-md-3" style="margin-bottom: 40px;">
+			<div class="headline"><h2>Useful Links</h2></div>
+			<ul class="list-unstyled link-list">
+			<li><a href="about.html">About us</a><i class="fa fa-angle-right"></i></li>
+			<li><a href="Contact.html">Contact us</a><i class="fa fa-angle-right"></i></li>
+			<li><a href="appointment.html">Book Appointment</a><i class="fa fa-angle-right"></i></li>
+			</ul>
+			</div><!--/col-md-3-->
+			<!-- End Link List -->
+	
+			<!-- Address -->
+			<div class="col-md-3 map-img" style="margin-bottom: 40px;">
+			<div class="headline"><h2>Contact Us</h2></div>
+			<address class="md-margin-bottom-40">
+				BusinessIncubator <br />
+				Himpton, NH <br />
+				Phone: 886 666 00555 <br />
+				Email: BusinessIncubator@gmail.com 
+			</address>
+			</div><!--/col-md-3-->
+			<!-- End Address -->
+			</div>
+			</div>
+			</div><!--/footer-->
+	
+			<div class="copyright">
+			<div class="container">
+			<div class="row">
+			<div class="col-md-6">
+			<p>
+			2020 &copy; All Rights Reserved.
+			<a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+			</p>
+			</div>
+	
+			<!-- Social Links -->
+			<div class="col-md-6">
+			<ul class="footer-socials list-inline">
+			<li>
+			<a href="http://www.facebook.com" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+			<i class="fa fa-facebook"></i>
+			</a>
+			</li>
+			<li>
+			<a href="http://www.skype.com" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+			<i class="fa fa-skype"></i>
+			</a>
+			</li>
+			<li>
+			<a href="http://www.googleplus.com" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+			<i class="fa fa-google-plus"></i>
+			</a>
+			</li>
+			<li>
+			<a href="http://www.linkedin.com" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+			<i class="fa fa-linkedin"></i>
+			</a>
+			</li>
+			<li>
+			<a href="http://www.Pinterest.com" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
+			<i class="fa fa-pinterest"></i>
+			</a>
+			</li>
+			<li>
+			<a href="http://www.twitter.com" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+			<i class="fa fa-twitter"></i>
+			</a>
+			</li>
+			</ul>
+			</div>
+			<!-- End Social Links -->
+			</div>
+			</div>
+			</div><!--/copyright-->
+			</div>
+			<!--=== End Footer ===-->
+  </div>
+</body>
+</html>
